@@ -1,5 +1,7 @@
 # Library Management App - ISS
 
+![Screenshot1](logo.png) 
+
 ## Descriere Proiect
 
 Aceasta este o aplicație pentru gestionarea unei biblioteci care permite abonaților să împrumute cărți prin intermediul terminalelor disponibile. Aplicația este dezvoltată folosind JavaFX pentru interfață și SQLite pentru gestionarea bazei de date.
