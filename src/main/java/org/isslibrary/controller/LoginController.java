@@ -87,7 +87,7 @@ public class LoginController {
             controller.setCurrentUser(service.getReader());
 
             Stage stage = (Stage) loginButton.getScene().getWindow();
-            Scene scene = new Scene(root, 940, 788);
+            Scene scene = new Scene(root, 812, 510);
             stage.setScene(scene);
 
         } catch (IOException e) {

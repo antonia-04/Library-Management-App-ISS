@@ -6,7 +6,7 @@
 <AnchorPane prefHeight="394" prefWidth="470" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" stylesheets="@style.css" fx:controller="org.isslibrary.controller.ReaderDetailsController">
     <children>
         <VBox alignment="CENTER" layoutX="85" layoutY="50" prefHeight="365.0" prefWidth="300" spacing="10">
-            <Label style="-fx-font-size: 18px;" text="Book Details" />
+            <Label style="-fx-font-size: 18px;" text="Reader Details" />
 
             <TextField fx:id="usernameField" promptText="Username" />
             <TextField fx:id="passwordField" promptText="Password" />
