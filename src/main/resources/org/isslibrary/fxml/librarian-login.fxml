@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" prefHeight="500" prefWidth="400" spacing="15" style="-fx-background-color: #2e266d;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.isslibrary.controller.LibrarianLoginController">
+
+    <padding>
+        <Insets bottom="40" left="20" right="20" top="40" />
+    </padding>
+
+    <ImageView fitHeight="100" preserveRatio="true">
+        <image>
+            <Image url="@images/logo.png" />
+        </image>
+    </ImageView>
+
+    <Label style="-fx-text-fill: white;" text="LIBRARIAN:">
+        <font>
+            <Font size="20" />
+        </font>
+    </Label>
+
+    <TextField fx:id="usernameField" maxWidth="250" promptText="Username" style="-fx-border-color: #00bdbd;                       -fx-background-color: #00bdbd;                       -fx-focus-color: #00bdbd;                       -fx-text-fill: black;                       -fx-prompt-text-fill: black;" />
+
+    <PasswordField fx:id="passwordField" maxWidth="250" promptText="Password" style="-fx-border-color: #00bdbd;                           -fx-background-color: #00bdbd;                           -fx-focus-color: #00bdbd;                           -fx-text-fill: black;                           -fx-prompt-text-fill: black;" />
+
+    <Button fx:id="loginButton" maxWidth="250" onAction="#handleLoginButtonAction" style="-fx-background-color: #5e17eb; -fx-text-fill: white;" text="Login" />
+
+</VBox>

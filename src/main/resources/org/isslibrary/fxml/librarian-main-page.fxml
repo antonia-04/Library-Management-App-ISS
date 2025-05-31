@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="510.0" prefWidth="812.0" styleClass="root" stylesheets="@style.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.isslibrary.controller.LibrarianMainPageController">
+
+    <!-- Logo în colțul stânga sus -->
+    <ImageView fitHeight="47.0" fitWidth="68.0" layoutX="34.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+        <image>
+            <Image url="@images/logo1.png" />
+        </image>
+    </ImageView>
+
+    <!-- TabPane principal -->
+    <TabPane layoutX="80" layoutY="77.0" prefHeight="433.0" prefWidth="672.0">
+
+        <tabs>
+            <Tab text="Books">
+                <AnchorPane>
+                    <children>
+                        <StackPane alignment="CENTER" prefHeight="480" prefWidth="700">
+                            <VBox prefHeight="480.0" prefWidth="381.0" spacing="15">
+                                <padding>
+                                    <Insets bottom="20" left="20" right="20" top="20" />
+                                </padding>
+
+                                <!-- TableView Books -->
+                                <TableView fx:id="booksTable" prefHeight="320" prefWidth="486.0">
+                                    <columns>
+                                        <TableColumn fx:id="bookISBNColumn" prefWidth="70" text="ISBN" />
+                                        <TableColumn fx:id="bookTitleColumn" prefWidth="130" text="Title" />
+                                        <TableColumn fx:id="bookAuthorColumn" prefWidth="200" text="Author" />
+                                        <TableColumn fx:id="bookDescriptionColumn" prefWidth="110" text="Description" />
+                                        <TableColumn fx:id="bookYearColumn" prefWidth="80" text="Year" />
+                                        <TableColumn fx:id="bookAvailableColumn" prefWidth="90" text="Available" />
+                                    </columns>
+                                </TableView>
+
+                                <!-- Butoane Books -->
+                                <HBox alignment="CENTER_LEFT" spacing="15">
+                                    <Button fx:id="addBookButton" onAction="#handleAddBook" prefWidth="120" text="Add Book" />
+                                    <Button fx:id="deleteBookButton" onAction="#handleDeleteBook" prefWidth="120" text="Delete Book" />
+                                    <Button fx:id="updateBookButton"  onAction="#handleUpdateBook" prefWidth="120" text="Update Book" />
+                                </HBox>
+                            </VBox>
+                        </StackPane>
+                    </children>
+                </AnchorPane>
+            </Tab>
+
+
+            <!-- Readers Tab -->
+            <Tab text="Readers">
+                <AnchorPane>
+                    <children>
+                        <VBox prefHeight="450" prefWidth="680" spacing="15">
+                            <padding>
+                                <Insets bottom="20" left="20" right="20" top="20" />
+                            </padding>
+
+                            <!-- TableView Readers -->
+                            <TableView fx:id="readersTable" prefHeight="320" prefWidth="680">
+                                <columns>
+                                    <TableColumn fx:id="usernameColumn" prefWidth="100" text="Username" />
+                                    <TableColumn fx:id="fullNameColumn" prefWidth="150" text="Full Name" />
+                                    <TableColumn fx:id="cnpColumn" prefWidth="100" text="CNP" />
+                                    <TableColumn fx:id="emailColumn" prefWidth="150" text="Email" />
+                                    <TableColumn fx:id="phoneColumn" prefWidth="80" text="Phone" />
+                                    <TableColumn fx:id="addressColumn" prefWidth="150" text="Address" />
+                                    <TableColumn fx:id="expirationDateColumn" prefWidth="100" text="Expiration Date" />
+                                </columns>
+                            </TableView>
+
+                            <!-- Butoane Readers -->
+                            <HBox alignment="CENTER_LEFT" spacing="15">
+                                <Button fx:id="addReaderButton" onAction="#handleAddReader" prefWidth="120" text="Add Reader" />
+                                <Button fx:id="deleteReaderButton" onAction="#handleDeleteReader" prefWidth="120" text="Delete Reader" />
+                                <Button fx:id="updateReaderButton" onAction="#handleUpdateReader" prefWidth="120" text="Update Reader" />
+                            </HBox>
+                        </VBox>
+                    </children>
+                </AnchorPane>
+            </Tab>
+
+        </tabs>
+    </TabPane>
+
+</AnchorPane>

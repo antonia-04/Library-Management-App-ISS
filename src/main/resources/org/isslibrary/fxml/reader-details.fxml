@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="394" prefWidth="470" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" stylesheets="@style.css" fx:controller="org.isslibrary.controller.ReaderDetailsController">
+    <children>
+        <VBox alignment="CENTER" layoutX="85" layoutY="50" prefHeight="365.0" prefWidth="300" spacing="10">
+            <Label style="-fx-font-size: 18px;" text="Book Details" />
+
+            <TextField fx:id="usernameField" promptText="Username" />
+            <TextField fx:id="passwordField" promptText="Password" />
+            <TextField fx:id="fullNameField" promptText="Full Name" />
+            <TextField fx:id="cnpField" promptText="CNP" />
+            <TextField fx:id="emailField" promptText="Email" />
+            <TextField fx:id="phoneField" promptText="Phone" />
+            <TextField fx:id="addressField" promptText="Address" />
+            <TextField fx:id="expirationDateField" promptText="Expiration Date (yyyy-mm-dd)" />
+
+            <Button onAction="#handleSave" text="Save" />
+        </VBox>
+    </children>
+</AnchorPane>

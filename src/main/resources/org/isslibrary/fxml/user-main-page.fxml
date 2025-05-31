@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="org.isslibrary.controller.ReaderMainPageController"
+            prefWidth="800" prefHeight="600">
+    <children>
+        <TabPane fx:id="tabPane" layoutX="20" layoutY="20" prefWidth="760" prefHeight="560">
+            <tabs>
+                <Tab text="Books Ready to Order">
+                    <AnchorPane>
+                        <TableView fx:id="availableBooksTable" prefWidth="740" prefHeight="500">
+                            <columns>
+                                <TableColumn fx:id="titleColumn" text="Title" />
+                                <TableColumn fx:id="authorColumn" text="Author" />
+                                <TableColumn fx:id="isbnColumn" text="ISBN" />
+                            </columns>
+                        </TableView>
+                        <Button layoutX="600" layoutY="510" text="Add to Basket" onAction="#handleAddToBasket"/>
+                    </AnchorPane>
+                </Tab>
+                <Tab text="Basket">
+                    <AnchorPane>
+                        <TableView fx:id="basketTable" prefWidth="740" prefHeight="500">
+                            <columns>
+                                <TableColumn fx:id="basketTitleColumn" text="Title" />
+                                <TableColumn fx:id="basketAuthorColumn" text="Author" />
+                            </columns>
+                        </TableView>
+                        <Button layoutX="600" layoutY="510" text="Borrow Selected" onAction="#handleBorrowBooks"/>
+                    </AnchorPane>
+                </Tab>
+                <Tab text="You Are Currently Borrowing">
+                    <AnchorPane>
+                        <TableView fx:id="currentLoansTable" prefWidth="740" prefHeight="500">
+                            <columns>
+                                <TableColumn fx:id="loanTitleColumn" text="Title" />
+                                <TableColumn fx:id="loanDateColumn" text="Loan Date" />
+                            </columns>
+                        </TableView>
+                        <Button layoutX="600" layoutY="510" text="Return" onAction="#handleReturnBook" fx:id="returnButton"/>
+                    </AnchorPane>
+
+                </Tab>
+                <Tab text="Book History">
+                    <AnchorPane>
+                        <TableView fx:id="historyTable" prefWidth="740" prefHeight="500">
+                            <columns>
+                                <TableColumn fx:id="historyTitleColumn" text="Title" />
+                                <TableColumn fx:id="returnDateColumn" text="Return Date" />
+                            </columns>
+                        </TableView>
+                    </AnchorPane>
+                </Tab>
+            </tabs>
+        </TabPane>
+    </children>
+</AnchorPane>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" stylesheets="@style.css" fx:controller="org.isslibrary.controller.BookDetailsController" prefWidth="470" prefHeight="394">
+    <children>
+        <VBox spacing="10" alignment="CENTER" layoutX="85" layoutY="50" prefWidth="300" prefHeight="300">
+            <Label text="Add New Book" style="-fx-font-size: 18px;"/>
+
+            <TextField fx:id="isbnField" promptText="ISBN" />
+            <TextField fx:id="titleField" promptText="Title" />
+            <TextField fx:id="authorField" promptText="Author" />
+            <TextField fx:id="descriptionField" promptText="Description" />
+            <TextField fx:id="yearField" promptText="Year" />
+
+            <Button text="Save" onAction="#handleSave"/>
+        </VBox>
+    </children>
+</AnchorPane>
