@@ -14,7 +14,7 @@ Aceasta este o aplicație pentru gestionarea unei biblioteci care permite abona�
 * **Interfață:** JavaFX (FXML)
 * **Programare:** Java
 
----
+
 
 ## Cerința
 
@@ -28,7 +28,6 @@ a putea folosi un terminal, un abonat trebuie să se autentifice. Dupa autentifi
 exemplarelor disponibile în acel moment si poate imprumuta unul sau mai multe. Pentru restituirea
 cartilor, exista un singur punct de lucru, deservit de un bibliotecar. Dupa fiecare împrumut/restituire,
 toți utilizatorii terminalelor bibliotecii văd lista actualizata a cartilor disponibile
----
 
 ## Interfață grafică
 
